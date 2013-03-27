@@ -1,0 +1,29 @@
+Hans_Reiser - The Hans Reiser process, same as the first part, except the file was ported
+to the format in order to display the court hearing. To run do:
+
+./carneades Hans_Reiser murderer
+
+the_thief_murderer - The thief murderer court case, slightly updated version compared to
+part 1 of the assignment, shows a very good long dialogue with exchange of arguments and
+counterarguments. To run do
+
+./carneades the_thief_murderer intent
+
+You could also run those in ghci. To do so do:
+  
+ghci Runme.hs
+
+process_init "murderer" "Hans_Reiser"
+
+or
+
+process_init "intent" "the_thief_murderer"
+
+More generic, unimpressive examples:
+
+To run them do:
+  
+./carneades Hristo_Stoichkov simpleton
+
+./carneades Test_part2 murder
+

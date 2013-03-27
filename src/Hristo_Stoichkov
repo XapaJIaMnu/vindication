@@ -1,0 +1,33 @@
+--Hristo Stoichkov is a famous Bulgarian footballer. He is famous for both
+--Being extremely talanted and extremely profane, rude and disrespectful
+--I will implement some of his offenses as arguments to prove that despite
+--his talent he is a simpleton. This is a funny way to use the framework
+--to prove to your friends that they did something wrong.
+
+ARGUMENTS:
+--During the France-Bulgaria game while the french anthem is playing he's fixing his shoes
+arg1 [disrespectful] [] simpleton 0.6.
+--During a game a referee rules him offside. Stoichkov goes and promptly breaks his foot.
+arg2 [bully] [] simpleton 0.8.
+--Disrespectuf comments about the german team before a game.
+arg3 [profane] [] simpleton 0.5.
+--Frequently gets in fight with journalists over small things
+arg4 [bully] [] simpleton 0.8.
+-- Verbaly abuses famous bulgarian homosexual singer and then asks him to sing privately for him/
+arg5 [hypocrite, impolite] [] simpleton 0.7.
+-- Before he became famous he was suspended for two years for starting one of the worst fights
+--in bulgarian football history
+arg6 [ruffian] [] simpleton 0.9.
+
+
+ASSUMPTIONS:
+
+[hypocirte,impolite,ruffian]
+
+STANDARDS:
+
+simpleton beyond_reasonable_doubt
+
+ADDITIONAL ASSUMPTIONS:
+  
+[disrespectful,bully,profane]

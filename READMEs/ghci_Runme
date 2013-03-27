@@ -1,0 +1,29 @@
+To use the framework you need to do the following:
+Place your config file in the directory of the haskell files.
+Load the haskell files as follows:
+
+ghci Runme.hs
+
+To test for applicability do a:
+
+testApp filename prop
+
+Where filename is the name of your file and prop is the name of the proposition you want to test.
+both filename and prop should strings (Which means they should be supplied in quotes ("")
+
+To test proposition, see if it is True or False you should do a:
+
+testProp filename prop
+
+Where filename is the name of your file and prop is the name of the proposition you want to test.
+both filename and prop should strings (Which means they should be supplied in quotes ("")
+
+As always to check for negative proposition you should put a - in front of it ("-prop")
+
+Examples
+
+testProp "Hans_Reiser" "murderer" returns True
+
+testProp "the_thief_murderer" "-intent" returns true
+
+testProp "Hristo_Stoichkov" "simpleton" returns true

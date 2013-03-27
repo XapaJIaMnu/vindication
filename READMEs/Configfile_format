@@ -1,0 +1,37 @@
+Config file syntax:
+Refer to one of the argument files for examples.
+
+Basically you should place all your arguments between the ARGUMENTS: and ASSUMPTIONS: lines.
+The arguments are in the form 
+argument [proposition, proposition] [proposition, proposition] proposition weight.
+Spaces and new lines are accepted everywhere. The restriction is that the propositions
+in brackets should be separated by commas (",") and each argument should end with a point (".").
+All other restrictions are as they are laid out in the assignment specifications.
+
+Place your initial assumptions between ASSUMPTIONS: and STANDARDS: lines.
+Optionaly put assumptions here to be taken into account initially before the dialogue between
+the prosecution and the defence begins.
+They should be in the format
+[assumption, assumption, assumption]
+and every assumptionshoudl obey the same rules that a proposition enclosed in bracket does.
+Valid characters for propositions from the assignment specifications apply.
+
+Place all your Standards after between STANDARDS: and the ADDITIONAL ASSUMPTIONS: line.
+They should be in the format:
+proposition standard
+where standard could be one of the following.
+
+scintilla
+beyond_reasonable_doubt
+preponderance
+clear_and_convincing
+dialectical_validity
+
+If a proposition does not appear in this section of the document, it is assumed that it has scintilla
+standard.
+
+Place the rest of your assumptions after the ADDITIONAL ASSUMPTIONS: line.
+Syntax is the same as for the Assumptions described above.
+Those assumptions will gradually be taken one by one during the dialogue.
+
+Comments are prefixed with -- and should be placed in the beginning of the line.

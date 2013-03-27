@@ -1,0 +1,21 @@
+-- This is the demo argument from language.lhs
+
+ARGUMENTS:
+
+arg1 [kill, intent] [] murder 0.8.
+arg2 [witness] [unreliable] intent 0.3.
+arg3 [witness2] [unreliable2] -intent 0.8.
+arg4 [witness3] [unreliable3] murder 0.8.
+arg5 [witness4] [unreliable4] -murder 0.8.
+
+ASSUMPTIONS:
+
+
+
+STANDARDS:
+
+intent beyond_reasonable_doubt
+
+ADDITIONAL ASSUMPTIONS:
+  
+[kill,witness, witness2, unreliable2, unreliable, witness3, witness4, unreliable3, unreliable4]

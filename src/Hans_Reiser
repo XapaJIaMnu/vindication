@@ -1,0 +1,41 @@
+--This argument attempts to capture the Hans Reiser case.
+--It shows that Hans Reiser would be proven guilty even before he
+--led the police to Nina Reiser's body and that is why he confessed.
+--In order to see that load the runner in ghci and run:
+--testProp "Hans_Reiser" "murderer"
+
+ARGUMENTS:
+
+arg1 [kill, murder] [] murderer 0.9.
+--Blood on the car
+arg2 [blood] [] murderer 0.3.
+--Purchased murder novels after Nina Reiser dissappeared and didn't need them for his professional carreer.
+arg3 [murderbooks] [professional] murderer 0.5.
+--Nina Reiser's missing
+arg4 [missing_person] [escaped] murderer 0.3.
+--Denies guilt
+arg5 [denial] [proven] -murderer 0.4.
+--Witness saw him clean his car after the disappearence
+arg6 [witness] [unreliable] murderer 0.5.
+-- Body is not found
+arg7 [-body] [] -murderer 0.3.
+-- He has a motive
+arg8 [motive] [] murderer 0.6.
+-- Erratic behaviour, losing composure in court
+arg9 [suspicious] [] murderer 0.7.
+-- The police are unable to prove with conclusion that the blood in the car is NIna Reiser's
+arg10 [nina_blood] [] murderer 0.9.
+arg11 [body] [alive] murderer 0.9.
+arg12 [confession] [false] murderer 0.9.
+
+ASSUMPTIONS:
+
+[missing_person]
+
+STANDARDS:
+
+murderer clear_and_convincing
+
+ADDITIONAL ASSUMPTIONS:
+  
+[blood,murderbooks,missing_person, witness, -body, -confession, motive, suspicious]

@@ -1,0 +1,37 @@
+--This represents a case that got famous recently in Bulgaria. It is about an
+--ex policemen that is now a priest and a person who produces religious pictures
+--of high quality (Iconograph, maybe, not sure what the word is in English). He
+--shot a thief, a young 23 year old boy who was a repeated offender and a drug
+--addict. Even though the priest had a revolver that he legally owned he shot
+--with the hunting riffle that he used for birds and shot the thief in the legs
+--in order to not fataly wound him or kill him. The thief however fled with the
+--wound and didn't seek medical attention afraid of the police and died of bloodloss
+--6 hours later. The pries was sentenced to 7 years in jail, because his life was not
+--directly in danger as the thief had only a knife and had gone there to steal, not to
+--kill and apparently what he should've done is give the thief all his possessions and
+--not try to defend himself. This case aims to show that he should have been ruled
+--innocent by any sensible court. His Name is Jordan Opitz, but unfortunately 
+--Information about the case is not avaliable in English.
+
+ARGUMENTS:
+
+arg1 [kill] [propertydefense] intent 0.9.
+arg2 [used_gun] [small_gun] intent 0.8.
+arg3 [shot] [leg] intent 0.8.
+arg4 [notify_police] [lie] -intent 0.4.
+--The drug addict died because he didn't seek medical help
+arg5 [die] [not_seek_medical_help] intent 0.4.
+--he is a repeated offender
+arg6 [repeated_offender] [wrong_person] -intent 0.3.
+arg7 [dead_body] [not_human] die 0.9.
+
+ASSUMPTIONS:
+[dead_body]
+
+STANDARDS:
+
+intent clear_and_convincing
+
+ADDITIONAL ASSUMPTIONS:
+  
+[kill,propertydefense,used_gun,small_gun,shot,leg,notify_police,die,not_seek_medical_help,repeated_offender]
